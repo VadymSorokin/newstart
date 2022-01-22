@@ -1,0 +1,33 @@
+.header {
+	display: flex;
+	justify-content: center;
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 36px;
+	}
+}
+.text {
+	text-align: center;
+}
+.block__one {
+	& p::first-letter {
+		text-transform: capitalize;
+	}
+	& p:first-of-type {
+		text-decoration: line-through;
+	}
+	& p:nth-of-type(2) {
+		text-decoration: bold;
+		color: rgb(64, 255, 0);
+	}
+	& p:nth-of-type(3) {
+		font-style: italic;
+	}
+	& p:nth-of-type(4) {
+		text-transform: uppercase;
+	}
+	& p:hover{
+		color: red;
+	}
+}
