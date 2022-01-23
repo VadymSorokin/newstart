@@ -1,17 +1,38 @@
 .header {
-	&__title,&__tel{
+	position: relative;
+	&__title,
+	&__tel {
+		font-size: 36px;
 		font-weight: bold;
+		letter-spacing: 2px;
 		text-align: center;
 		text-transform: uppercase;
-		border: 1px solid blue;
-		background-color: yellow;
+		background-color: rgba(252, 250, 248, 0.527);
 		padding: 24px 0;
 		border-radius: 6px;
-		box-shadow: 0 0 12px blue, inset 0 0 12px blue;
+		box-shadow: 0 0 12px rgba(240, 243, 220, 0.527), inset 0 0 12px rgba(138, 119, 106, 0.527);
 	}
 	&__title {
-		margin-bottom: 4px; 
+		margin-bottom: 4px;
 	}
-	&__tel{
+	&__tel {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		font-size: 12px;
+		position: fixed;
+		right: 32px;
+		bottom: 32px;
+		animation: call 3s ease-in-out infinite alternate-reverse ;
+	}
+	@keyframes call {
+		from {
+			width: 24px;
+			height: 24px;
+		}
+		to {
+			width: 36px;
+			height: 36px;
+		}
 	}
 }
