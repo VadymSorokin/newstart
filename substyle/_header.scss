@@ -15,6 +15,7 @@
 		margin-bottom: 4px;
 	}
 	&__tel {
+		font-size: 24px;
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
@@ -23,6 +24,9 @@
 		right: 32px;
 		bottom: 32px;
 		animation: call 1s ease-in-out infinite alternate-reverse;
+	}
+	.fz{
+		font-size: 24px;
 	}
 }
 @keyframes call {
