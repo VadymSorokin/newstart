@@ -99,7 +99,7 @@ body {
 .header {
   position: relative;
 }
-.header__title, .header__tel {
+.header__title {
   font-size: 36px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -121,8 +121,9 @@ body {
   position: fixed;
   right: 32px;
   bottom: 32px;
-  animation: call 3s ease-in-out infinite alternate-reverse;
+  animation: call 1s ease-in-out infinite alternate-reverse;
 }
+
 @-webkit-keyframes call {
   from {
     width: 18px;
@@ -133,6 +134,7 @@ body {
     height: 36px;
   }
 }
+
 @keyframes call {
   from {
     width: 18px;
@@ -143,7 +145,6 @@ body {
     height: 36px;
   }
 }
-
 .main__box {
   display: flex;
   justify-content: space-evenly;

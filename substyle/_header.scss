@@ -1,7 +1,6 @@
 .header {
 	position: relative;
-	&__title,
-	&__tel {
+	&__title {
 		font-size: 36px;
 		font-weight: bold;
 		letter-spacing: 2px;
@@ -23,16 +22,16 @@
 		position: fixed;
 		right: 32px;
 		bottom: 32px;
-		animation: call 3s ease-in-out infinite alternate-reverse ;
+		animation: call 1s ease-in-out infinite alternate-reverse;
 	}
-	@keyframes call {
-		from {
-			width: 18px;
-			height: 18px;
-		}
-		to {
-			width: 36px;
-			height: 36px;
-		}
+}
+@keyframes call {
+	from {
+		width: 18px;
+		height: 18px;
+	}
+	to {
+		width: 36px;
+		height: 36px;
 	}
 }
